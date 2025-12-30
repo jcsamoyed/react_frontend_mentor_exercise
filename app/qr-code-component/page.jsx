@@ -11,7 +11,13 @@ export default function QRCodeComponent() {
     >
       <div className='p-4 bg-white rounded-[20px] max-w-[320px] text-center shadow-lg shadow-slate-400/20'>
         <div className='relative p-16 rounded-[10px] bg-blue-500 overflow-hidden'>
-          <Image src={qrCodeImage} alt='QR Code' width={160} height={160} />
+          <Image
+            src={qrCodeImage}
+            alt='QR Code'
+            width={160}
+            height={160}
+            className='relative z-1'
+          />
           <span className='block absolute right-23 bottom-31 w-82 h-82 rounded-full bg-blue-400 opacity-30'></span>
           <span className='block absolute left-32.75 top-51 w-67.5 h-67.5 rounded-full bg-blue-400 opacity-30'></span>
         </div>
