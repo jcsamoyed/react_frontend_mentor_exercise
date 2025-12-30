@@ -1,6 +1,9 @@
 import Link from 'next/link';
 
-const lessons = [{ id: 'qr-code-component', title: 'QR Code Component' }];
+const lessons = [
+  { id: 'qr-code-component', title: 'QR Code Component' },
+  { id: 'blog-preview-card', title: 'Blog Preview Card' },
+];
 
 export default function Home() {
   return (
