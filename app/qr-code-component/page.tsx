@@ -13,7 +13,7 @@ export default function QRCodeComponent() {
         'min-h-screen bg-slate-300 flex items-center justify-center'
       )}
     >
-      <div className='p-4 bg-white rounded-[20px] max-w-[320px] text-center shadow-lg shadow-slate-400/20'>
+      <div className='p-4 bg-white rounded-[20px] max-w-[320px] mx-6 text-center shadow-lg shadow-slate-400/20'>
         <div className='relative p-16 rounded-[10px] bg-blue-500 overflow-hidden'>
           <Image
             src={qrCodeImage}
