@@ -1,9 +1,14 @@
+import { Outfit } from 'next/font/google';
 import Image from 'next/image';
 import qrCodeImage from './images/QR.svg';
 
+const outfit = Outfit({ subsets: ['latin'], weight: ['400', '700'] });
+
 export default function QRCodeComponent() {
   return (
-    <main className='min-h-screen bg-slate-300 flex items-center justify-center'>
+    <main
+      className={`${outfit.className} min-h-screen bg-slate-300 flex items-center justify-center`}
+    >
       <div className='p-4 bg-white rounded-[20px] max-w-[320px] text-center shadow-lg shadow-slate-400/20'>
         <div className='relative p-16 rounded-[10px] bg-blue-500 overflow-hidden'>
           <Image src={qrCodeImage} alt='QR Code' width={160} height={160} />
