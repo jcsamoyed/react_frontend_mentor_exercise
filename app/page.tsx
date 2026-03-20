@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from './components/Link';
 
 const lessons = [
   { id: 'qr-code-component', title: 'QR Code Component' },
